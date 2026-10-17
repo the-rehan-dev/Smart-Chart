@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#f4f6ff" />
+    <meta
+      name="description"
+      content="Smart Chat is your AI-powered assistant for helpful conversations."
+    />
+
+    <title>Smart Chat | AI Assistant</title>
+
+    <link rel="shortcut icon" href="./img/smart-chat.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="heading">
+      <div class="header-content">
+        <img src="./img/smart-chat.png" alt="Smart Chat logo" class="logo" />
+        <div class="brand-info">
+          <h1>Smart Chat</h1>
+          <p class="brand-subtitle">Your AI assistant</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="main-section">
+      <div class="welcome-message" id="welcome-message">
+        <div class="welcome-icon">
+          <img width="100%" src="./img/smart-chat.png" alt="" />
+        </div>
+        <h2>How can I help you today?</h2>
+        <p>Ask a question, explore an idea, or start a conversation.</p>
+      </div>
+    </main>
+
+    <footer class="prompt-section">
+      <form id="chat-form" class="text-container">
+        <div class="input-text">
+          <label class="sr-only" for="user-text">Your message</label>
+          <input
+            id="user-text"
+            name="message"
+            type="text"
+            placeholder="Message Smart Chat..."
+            class="prompt-msg"
+            autocomplete="off"
+            maxlength="4000"
+            required
+          />
+        </div>
+
+        <button id="send-btn" type="submit">
+          <img src="./img/send_button.png" alt="" />
+        </button>
+      </form>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
